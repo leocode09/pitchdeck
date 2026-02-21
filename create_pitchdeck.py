@@ -40,6 +40,7 @@ ORANGE = WARNING
 
 FONT = "Inter"
 FONT_HEAD = "Inter SemiBold"
+FONT_SCRIPT = "Segoe Script"
 
 ASSETS = Path("assets")
 RAW = ASSETS / "raw"
@@ -218,66 +219,90 @@ def card(slide, left, top, width, height, color=CARD_BG):
 
 def slide_cover(prs):
     s = prs.slides.add_slide(prs.slide_layouts[6])
-    add_full_photo(s, "cover")
-    overlay = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, Inches(WIDTH), Inches(HEIGHT))
-    overlay.fill.solid()
-    overlay.fill.fore_color.rgb = PRIMARY
-    overlay.fill.transparency = 0.42
-    overlay.line.fill.background()
+    base = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, Inches(WIDTH), Inches(HEIGHT))
+    base.fill.solid()
+    base.fill.fore_color.rgb = RGBColor(15, 18, 27)
+    base.line.fill.background()
 
-    panel = card(s, 1.2, 0.95, 10.9, 4.95, color=PRIMARY_SOFT)
-    panel.fill.transparency = 0.35
-    panel.line.color.rgb = RGBColor(82, 82, 91)
+    vignette = s.shapes.add_shape(MSO_SHAPE.OVAL, Inches(-1.2), Inches(-0.7), Inches(15.8), Inches(9.2))
+    vignette.fill.solid()
+    vignette.fill.fore_color.rgb = RGBColor(24, 27, 38)
+    vignette.fill.transparency = 0.58
+    vignette.line.fill.background()
+
+    panel_shadow = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(1.18), Inches(1.22), Inches(10.95), Inches(4.7))
+    panel_shadow.fill.solid()
+    panel_shadow.fill.fore_color.rgb = RGBColor(0, 0, 0)
+    panel_shadow.fill.transparency = 0.58
+    panel_shadow.line.fill.background()
+
+    panel = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(1.12), Inches(1.16), Inches(10.95), Inches(4.7))
+    panel.fill.solid()
+    panel.fill.fore_color.rgb = RGBColor(40, 41, 49)
+    panel.fill.transparency = 0.14
+    panel.line.color.rgb = RGBColor(70, 74, 88)
 
     style_text(
-        s.shapes.add_textbox(Inches(1.7), Inches(1.45), Inches(10.0), Inches(1.1)),
+        s.shapes.add_textbox(Inches(2.0), Inches(1.58), Inches(9.2), Inches(0.95)),
         "Teacher Copilot",
-        size=56,
-        bold=True,
+        size=60,
+        bold=False,
         color=WHITE,
         align=PP_ALIGN.CENTER,
-        font=FONT_HEAD,
+        font=FONT_SCRIPT,
     )
     style_text(
-        s.shapes.add_textbox(Inches(1.7), Inches(2.65), Inches(10.0), Inches(0.8)),
+        s.shapes.add_textbox(Inches(1.8), Inches(2.72), Inches(9.7), Inches(0.6)),
         "AI-Powered Teacher Productivity & Student Learning Insights",
-        size=20,
-        bold=True,
-        color=PRIMARY_FG,
+        size=24,
+        bold=False,
+        color=WHITE,
         align=PP_ALIGN.CENTER,
+        font=FONT_SCRIPT,
     )
 
-    map_card = card(s, 4.0, 3.45, 5.35, 2.0, color=CARD_BG)
-    map_card.line.color.rgb = BORDER
+    map_shadow = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(4.05), Inches(3.72), Inches(5.4), Inches(2.0))
+    map_shadow.fill.solid()
+    map_shadow.fill.fore_color.rgb = RGBColor(0, 0, 0)
+    map_shadow.fill.transparency = 0.78
+    map_shadow.line.fill.background()
+
+    map_card = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(4.0), Inches(3.68), Inches(5.4), Inches(2.0))
+    map_card.fill.solid()
+    map_card.fill.fore_color.rgb = RGBColor(245, 245, 245)
+    map_card.line.color.rgb = RGBColor(220, 220, 220)
+
     style_text(
-        s.shapes.add_textbox(Inches(4.3), Inches(4.22), Inches(4.8), Inches(0.6)),
+        s.shapes.add_textbox(Inches(4.28), Inches(4.53), Inches(4.82), Inches(0.5)),
         "Pan-African rollout",
-        size=22,
-        bold=True,
-        color=TEXT,
+        size=28,
+        bold=False,
+        color=PRIMARY,
         align=PP_ALIGN.CENTER,
         italic=True,
-        font=FONT_HEAD,
+        font=FONT_SCRIPT,
     )
-    for x, y in [(4.45, 3.85), (5.4, 4.15), (6.3, 3.75), (7.1, 4.4), (8.0, 3.95), (8.7, 4.6)]:
+
+    for x, y in [(4.55, 4.15), (5.5, 4.45), (6.42, 4.05), (7.2, 4.42), (8.12, 4.25), (8.82, 4.62)]:
+        dot_shadow = s.shapes.add_shape(MSO_SHAPE.OVAL, Inches(x + 0.02), Inches(y + 0.02), Inches(0.23), Inches(0.23))
+        dot_shadow.fill.solid()
+        dot_shadow.fill.fore_color.rgb = RGBColor(0, 0, 0)
+        dot_shadow.fill.transparency = 0.65
+        dot_shadow.line.fill.background()
+
         d = s.shapes.add_shape(MSO_SHAPE.OVAL, Inches(x), Inches(y), Inches(0.23), Inches(0.23))
         d.fill.solid()
-        d.fill.fore_color.rgb = ORANGE
+        d.fill.fore_color.rgb = RGBColor(217, 119, 6)
         d.line.fill.background()
 
-    bottom = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, Inches(6.85), Inches(WIDTH), Inches(0.65))
-    bottom.fill.solid()
-    bottom.fill.fore_color.rgb = PRIMARY
-    bottom.fill.transparency = 0.18
-    bottom.line.fill.background()
     style_text(
-        s.shapes.add_textbox(Inches(0.5), Inches(7.02), Inches(12.3), Inches(0.34)),
+        s.shapes.add_textbox(Inches(2.0), Inches(7.03), Inches(9.3), Inches(0.34)),
         "Empowering teachers and transforming learning outcomes",
-        size=17,
-        bold=True,
+        size=24,
+        bold=False,
         color=WHITE,
         align=PP_ALIGN.CENTER,
-        font=FONT_HEAD,
+        font=FONT_SCRIPT,
     )
 
 
