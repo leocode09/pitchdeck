@@ -14,17 +14,31 @@ from pptx.util import Inches, Pt
 WIDTH = 13.333
 HEIGHT = 7.5
 
-BLUE = RGBColor(10, 77, 128)
-BLUE_DARK = RGBColor(7, 52, 88)
-BLUE_LIGHT = RGBColor(220, 236, 248)
-GREEN = RGBColor(39, 159, 85)
-ORANGE = RGBColor(225, 134, 31)
-TEXT = RGBColor(34, 42, 53)
-MUTED = RGBColor(86, 100, 114)
+# shadcn-inspired tokens
+BACKGROUND = RGBColor(250, 250, 250)
+BACKGROUND_SOFT = RGBColor(245, 245, 245)
+CARD_BG = RGBColor(255, 255, 255)
+BORDER = RGBColor(228, 228, 231)
+TEXT = RGBColor(24, 24, 27)
+MUTED = RGBColor(113, 113, 122)
+PRIMARY = RGBColor(24, 24, 27)
+PRIMARY_SOFT = RGBColor(39, 39, 42)
+PRIMARY_FG = RGBColor(250, 250, 250)
+ACCENT = RGBColor(37, 99, 235)
+ACCENT_SOFT = RGBColor(239, 246, 255)
+SUCCESS = RGBColor(22, 163, 74)
+WARNING = RGBColor(217, 119, 6)
 WHITE = RGBColor(255, 255, 255)
 
-FONT = "Segoe UI"
-FONT_HEAD = "Segoe UI Semibold"
+# Keep these aliases to minimize per-slide changes
+BLUE = PRIMARY_SOFT
+BLUE_DARK = PRIMARY
+BLUE_LIGHT = RGBColor(241, 245, 249)
+GREEN = SUCCESS
+ORANGE = WARNING
+
+FONT = "Inter"
+FONT_HEAD = "Inter SemiBold"
 
 ASSETS = Path("assets")
 RAW = ASSETS / "raw"
@@ -117,39 +131,39 @@ def style_bullets(shape, items, size=20, color=TEXT, spacing=7):
 def add_background(slide, soft=False):
     bg = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, Inches(WIDTH), Inches(HEIGHT))
     bg.fill.solid()
-    bg.fill.fore_color.rgb = RGBColor(247, 249, 252) if soft else RGBColor(250, 251, 253)
+    bg.fill.fore_color.rgb = BACKGROUND_SOFT if soft else BACKGROUND
     bg.line.fill.background()
 
     corner = slide.shapes.add_shape(MSO_SHAPE.OVAL, Inches(-1.5), Inches(5.3), Inches(5.4), Inches(3.4))
     corner.fill.solid()
     corner.fill.fore_color.rgb = BLUE_LIGHT
-    corner.fill.transparency = 0.35
+    corner.fill.transparency = 0.5
     corner.line.fill.background()
 
     corner2 = slide.shapes.add_shape(MSO_SHAPE.OVAL, Inches(9.7), Inches(0.2), Inches(4.4), Inches(2.8))
     corner2.fill.solid()
-    corner2.fill.fore_color.rgb = RGBColor(231, 243, 236)
-    corner2.fill.transparency = 0.5
+    corner2.fill.fore_color.rgb = RGBColor(244, 244, 245)
+    corner2.fill.transparency = 0.4
     corner2.line.fill.background()
 
 
 def add_header(slide, title, right_text=None):
     bar = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, Inches(WIDTH), Inches(0.92))
     bar.fill.solid()
-    bar.fill.fore_color.rgb = BLUE
+    bar.fill.fore_color.rgb = PRIMARY
     bar.line.fill.background()
 
     accent = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, Inches(0.82), Inches(WIDTH), Inches(0.1))
     accent.fill.solid()
-    accent.fill.fore_color.rgb = RGBColor(17, 106, 170)
+    accent.fill.fore_color.rgb = ACCENT
     accent.line.fill.background()
 
     t = slide.shapes.add_textbox(Inches(0.34), Inches(0.13), Inches(8.7), Inches(0.58))
-    style_text(t, title, size=28, bold=True, color=WHITE, font=FONT_HEAD)
+    style_text(t, title, size=28, bold=True, color=PRIMARY_FG, font=FONT_HEAD)
 
     if right_text:
         rt = slide.shapes.add_textbox(Inches(8.5), Inches(0.18), Inches(4.45), Inches(0.5))
-        style_text(rt, right_text, size=20, bold=True, color=WHITE, align=PP_ALIGN.RIGHT, italic=True, font=FONT_HEAD)
+        style_text(rt, right_text, size=20, bold=True, color=PRIMARY_FG, align=PP_ALIGN.RIGHT, italic=True, font=FONT_HEAD)
 
 
 def add_tagline(slide, text, color=BLUE_DARK):
@@ -170,8 +184,8 @@ def add_photo(slide, key, left, top, width, height, rounded=True):
         Inches(height),
     )
     frame.fill.solid()
-    frame.fill.fore_color.rgb = WHITE
-    frame.line.color.rgb = RGBColor(199, 213, 225)
+    frame.fill.fore_color.rgb = CARD_BG
+    frame.line.color.rgb = BORDER
 
     img_path = cropped_image(key, width - 0.12, height - 0.12)
     slide.shapes.add_picture(
@@ -188,11 +202,16 @@ def add_full_photo(slide, key):
     slide.shapes.add_picture(str(image), 0, 0, width=Inches(WIDTH), height=Inches(HEIGHT))
 
 
-def card(slide, left, top, width, height, color=WHITE):
+def card(slide, left, top, width, height, color=CARD_BG):
+    shadow = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(left), Inches(top + 0.03), Inches(width), Inches(height))
+    shadow.fill.solid()
+    shadow.fill.fore_color.rgb = RGBColor(212, 212, 216)
+    shadow.fill.transparency = 0.82
+    shadow.line.fill.background()
     c = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(left), Inches(top), Inches(width), Inches(height))
     c.fill.solid()
     c.fill.fore_color.rgb = color
-    c.line.color.rgb = RGBColor(212, 222, 232)
+    c.line.color.rgb = BORDER
     return c
 
 
@@ -201,13 +220,13 @@ def slide_cover(prs):
     add_full_photo(s, "cover")
     overlay = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, Inches(WIDTH), Inches(HEIGHT))
     overlay.fill.solid()
-    overlay.fill.fore_color.rgb = RGBColor(8, 52, 86)
-    overlay.fill.transparency = 0.36
+    overlay.fill.fore_color.rgb = PRIMARY
+    overlay.fill.transparency = 0.42
     overlay.line.fill.background()
 
-    panel = card(s, 1.2, 0.95, 10.9, 4.95, color=RGBColor(16, 96, 153))
-    panel.fill.transparency = 0.2
-    panel.line.fill.background()
+    panel = card(s, 1.2, 0.95, 10.9, 4.95, color=PRIMARY_SOFT)
+    panel.fill.transparency = 0.35
+    panel.line.color.rgb = RGBColor(82, 82, 91)
 
     style_text(
         s.shapes.add_textbox(Inches(1.7), Inches(1.45), Inches(10.0), Inches(1.1)),
@@ -223,18 +242,18 @@ def slide_cover(prs):
         "AI-Powered Teacher Productivity & Student Learning Insights",
         size=20,
         bold=True,
-        color=WHITE,
+        color=PRIMARY_FG,
         align=PP_ALIGN.CENTER,
     )
 
-    map_card = card(s, 4.0, 3.45, 5.35, 2.0, color=RGBColor(180, 225, 175))
-    map_card.line.color.rgb = RGBColor(98, 163, 98)
+    map_card = card(s, 4.0, 3.45, 5.35, 2.0, color=CARD_BG)
+    map_card.line.color.rgb = BORDER
     style_text(
         s.shapes.add_textbox(Inches(4.3), Inches(4.22), Inches(4.8), Inches(0.6)),
         "Pan-African rollout",
         size=22,
         bold=True,
-        color=RGBColor(52, 98, 54),
+        color=TEXT,
         align=PP_ALIGN.CENTER,
         italic=True,
         font=FONT_HEAD,
@@ -247,8 +266,8 @@ def slide_cover(prs):
 
     bottom = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, Inches(6.85), Inches(WIDTH), Inches(0.65))
     bottom.fill.solid()
-    bottom.fill.fore_color.rgb = BLUE_DARK
-    bottom.fill.transparency = 0.15
+    bottom.fill.fore_color.rgb = PRIMARY
+    bottom.fill.transparency = 0.18
     bottom.line.fill.background()
     style_text(
         s.shapes.add_textbox(Inches(0.5), Inches(7.02), Inches(12.3), Inches(0.34)),
@@ -285,7 +304,7 @@ def slide_mission(prs):
     s = prs.slides.add_slide(prs.slide_layouts[6])
     add_background(s, soft=True)
     add_header(s, "Our Mission & Vision")
-    card(s, 0.55, 1.35, 6.25, 5.25, color=RGBColor(243, 250, 246))
+    card(s, 0.55, 1.35, 6.25, 5.25, color=CARD_BG)
 
     box = s.shapes.add_textbox(Inches(0.9), Inches(1.8), Inches(5.7), Inches(4.4))
     tf = box.text_frame
@@ -295,7 +314,7 @@ def slide_mission(prs):
     p1.text = "Mission: Empower teachers to transform learning with AI"
     p1.font.size = Pt(25)
     p1.font.bold = True
-    p1.font.color.rgb = GREEN
+    p1.font.color.rgb = ACCENT
     p1.font.name = FONT_HEAD
 
     p2 = tf.add_paragraph()
@@ -303,11 +322,11 @@ def slide_mission(prs):
     p2.space_before = Pt(30)
     p2.font.size = Pt(25)
     p2.font.bold = True
-    p2.font.color.rgb = RGBColor(179, 34, 47)
+    p2.font.color.rgb = TEXT
     p2.font.name = FONT_HEAD
 
     add_photo(s, "mission", 7.0, 1.48, 5.75, 4.95)
-    add_tagline(s, "Empowering Teachers, Transforming Learning", color=RGBColor(168, 125, 64))
+    add_tagline(s, "Empowering Teachers, Transforming Learning", color=PRIMARY)
 
 
 def slide_solution(prs):
