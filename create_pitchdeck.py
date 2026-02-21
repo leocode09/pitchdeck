@@ -1,3 +1,4 @@
+from datetime import datetime
 from pathlib import Path
 from urllib.request import Request, urlopen
 
@@ -334,25 +335,25 @@ def slide_solution(prs):
     add_background(s)
     add_header(s, "Our Solution:", right_text="Teacher Copilot")
 
-    style_text(s.shapes.add_textbox(Inches(1.0), Inches(1.3), Inches(4.6), Inches(0.4)), "Current Workflow", size=17, bold=True, color=GREEN, align=PP_ALIGN.CENTER, font=FONT_HEAD)
-    style_text(s.shapes.add_textbox(Inches(7.6), Inches(1.3), Inches(4.6), Inches(0.4)), "Optimized Workflow", size=17, bold=True, color=ORANGE, align=PP_ALIGN.CENTER, font=FONT_HEAD)
+    style_text(s.shapes.add_textbox(Inches(1.0), Inches(1.3), Inches(4.6), Inches(0.4)), "Current Workflow", size=17, bold=True, color=MUTED, align=PP_ALIGN.CENTER, font=FONT_HEAD)
+    style_text(s.shapes.add_textbox(Inches(7.6), Inches(1.3), Inches(4.6), Inches(0.4)), "Optimized Workflow", size=17, bold=True, color=ACCENT, align=PP_ALIGN.CENTER, font=FONT_HEAD)
 
     current = ["Manual Grading", "Basic Feedback", "Slow Reports"]
     future = ["AI Grading", "Instant Feedback", "Analytics & Alerts"]
 
     y = 1.85
     for idx in range(3):
-        l = card(s, 0.8, y, 4.9, 1.0, color=GREEN)
-        l.line.fill.background()
-        style_text(s.shapes.add_textbox(Inches(1.05), Inches(y + 0.31), Inches(4.4), Inches(0.35)), current[idx], size=18, bold=True, color=WHITE, align=PP_ALIGN.CENTER, font=FONT_HEAD)
+        l = card(s, 0.8, y, 4.9, 1.0, color=RGBColor(244, 244, 245))
+        l.line.color.rgb = BORDER
+        style_text(s.shapes.add_textbox(Inches(1.05), Inches(y + 0.31), Inches(4.4), Inches(0.35)), current[idx], size=18, bold=True, color=TEXT, align=PP_ALIGN.CENTER, font=FONT_HEAD)
 
-        r = card(s, 7.0, y, 5.3, 1.0, color=ORANGE)
-        r.line.fill.background()
-        style_text(s.shapes.add_textbox(Inches(7.3), Inches(y + 0.31), Inches(4.7), Inches(0.35)), future[idx], size=18, bold=True, color=WHITE, align=PP_ALIGN.CENTER, font=FONT_HEAD)
+        r = card(s, 7.0, y, 5.3, 1.0, color=ACCENT_SOFT)
+        r.line.color.rgb = RGBColor(191, 219, 254)
+        style_text(s.shapes.add_textbox(Inches(7.3), Inches(y + 0.31), Inches(4.7), Inches(0.35)), future[idx], size=18, bold=True, color=RGBColor(30, 64, 175), align=PP_ALIGN.CENTER, font=FONT_HEAD)
 
         arr = s.shapes.add_shape(MSO_SHAPE.RIGHT_ARROW, Inches(5.82), Inches(y + 0.24), Inches(1.0), Inches(0.52))
         arr.fill.solid()
-        arr.fill.fore_color.rgb = BLUE
+        arr.fill.fore_color.rgb = RGBColor(161, 161, 170)
         arr.line.fill.background()
         y += 1.43
 
@@ -364,9 +365,9 @@ def slide_market(prs):
 
     card(s, 0.6, 1.45, 6.1, 5.0)
     tiers = [
-        ("TAM", "2.5M Schools\n$600M+", RGBColor(29, 116, 180), 1.3, 2.0, 4.7, 1.2),
-        ("SAM", "Targetable 32M Schools", RGBColor(50, 163, 138), 1.6, 3.28, 4.1, 1.1),
-        ("SOM", "Pilot 5 Schools\n$20M", RGBColor(216, 143, 36), 1.9, 4.43, 3.5, 1.0),
+        ("TAM", "2.5M Schools\n$600M+", RGBColor(39, 39, 42), 1.3, 2.0, 4.7, 1.2),
+        ("SAM", "Targetable 32M Schools", RGBColor(82, 82, 91), 1.6, 3.28, 4.1, 1.1),
+        ("SOM", "Pilot 5 Schools\n$20M", RGBColor(113, 113, 122), 1.9, 4.43, 3.5, 1.0),
     ]
     for label, txt, color, l, t, w, h in tiers:
         shp = s.shapes.add_shape(MSO_SHAPE.TRAPEZOID, Inches(l), Inches(t), Inches(w), Inches(h))
@@ -384,16 +385,16 @@ def slide_business(prs):
     add_header(s, "Business Model")
 
     items = [
-        (0.9, ORANGE, "B2B (Schools)\n$6,000 per school/year"),
-        (6.9, GREEN, "B2G (Government)\n$600,000 per country/year"),
+        (0.9, CARD_BG, "B2B (Schools)\n$6,000 per school/year"),
+        (6.9, CARD_BG, "B2G (Government)\n$600,000 per country/year"),
     ]
-    for x, color, txt in items:
+    for idx, (x, color, txt) in enumerate(items):
         c = card(s, x, 1.8, 5.5, 3.35, color=color)
-        c.line.fill.background()
-        style_text(s.shapes.add_textbox(Inches(x + 0.25), Inches(2.23), Inches(5.0), Inches(1.55)), txt, size=25, bold=True, color=WHITE, align=PP_ALIGN.CENTER, font=FONT_HEAD)
+        c.line.color.rgb = BORDER
+        style_text(s.shapes.add_textbox(Inches(x + 0.25), Inches(2.23), Inches(5.0), Inches(1.55)), txt, size=25, bold=True, color=TEXT, align=PP_ALIGN.CENTER, font=FONT_HEAD)
         strip = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(x), Inches(4.72), Inches(5.5), Inches(0.42))
         strip.fill.solid()
-        strip.fill.fore_color.rgb = RGBColor(248, 248, 248)
+        strip.fill.fore_color.rgb = ACCENT if idx == 0 else RGBColor(99, 102, 241)
         strip.line.fill.background()
 
 
@@ -402,7 +403,7 @@ def slide_value(prs):
     add_background(s)
     add_header(s, "Value Proposition")
 
-    card(s, 0.6, 1.5, 6.3, 5.0, color=RGBColor(230, 241, 252))
+    card(s, 0.6, 1.5, 6.3, 5.0, color=ACCENT_SOFT)
     style_bullets(
         s.shapes.add_textbox(Inches(0.95), Inches(1.95), Inches(5.8), Inches(4.5)),
         [
@@ -440,7 +441,7 @@ def slide_revenue(prs):
     add_background(s)
     add_header(s, "Revenue Projections")
 
-    rows = [("Year 1", "$5.4M", BLUE), ("Year 2", "$14.4M", BLUE_DARK), ("Year 3", "$248M+", ORANGE)]
+    rows = [("Year 1", "$5.4M", RGBColor(63, 63, 70)), ("Year 2", "$14.4M", PRIMARY), ("Year 3", "$248M+", ACCENT)]
     y = 1.8
     for year, amt, color in rows:
         r = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.6), Inches(y), Inches(6.2), Inches(1.1))
@@ -453,7 +454,7 @@ def slide_revenue(prs):
 
     b_x = 8.1
     for i, h in enumerate([1.2, 1.95, 2.8]):
-        c = [RGBColor(220, 148, 58), GREEN, RGBColor(132, 198, 80)][i]
+        c = [RGBColor(161, 161, 170), RGBColor(113, 113, 122), ACCENT][i]
         bar = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(b_x + 0.78 * i), Inches(6.0 - h), Inches(0.56), Inches(h))
         bar.fill.solid()
         bar.fill.fore_color.rgb = c
@@ -461,7 +462,7 @@ def slide_revenue(prs):
 
     up = s.shapes.add_shape(MSO_SHAPE.UP_ARROW, Inches(7.15), Inches(3.2), Inches(4.9), Inches(2.95))
     up.fill.solid()
-    up.fill.fore_color.rgb = RGBColor(43, 148, 92)
+    up.fill.fore_color.rgb = RGBColor(59, 130, 246)
     up.fill.transparency = 0.2
     up.line.fill.background()
 
@@ -477,13 +478,13 @@ def slide_gtm(prs):
         style_text(s.shapes.add_textbox(Inches(x), Inches(3.24), Inches(2.5), Inches(0.8)), amt, size=31, bold=True, align=PP_ALIGN.CENTER, font=FONT_HEAD)
 
     bars = [
-        (1.2, 0.7, BLUE),
-        (2.0, 0.9, BLUE_DARK),
-        (4.8, 1.6, BLUE),
-        (5.58, 1.6, BLUE_DARK),
-        (8.2, 2.15, ORANGE),
-        (9.0, 2.75, RGBColor(201, 76, 39)),
-        (9.78, 3.2, RGBColor(185, 64, 35)),
+        (1.2, 0.7, RGBColor(113, 113, 122)),
+        (2.0, 0.9, RGBColor(82, 82, 91)),
+        (4.8, 1.6, RGBColor(82, 82, 91)),
+        (5.58, 1.6, PRIMARY),
+        (8.2, 2.15, RGBColor(96, 165, 250)),
+        (9.0, 2.75, RGBColor(59, 130, 246)),
+        (9.78, 3.2, ACCENT),
     ]
     for x, h, col in bars:
         b = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(x), Inches(5.3 - h), Inches(0.54), Inches(h))
@@ -493,7 +494,7 @@ def slide_gtm(prs):
 
     growth = s.shapes.add_shape(MSO_SHAPE.UP_ARROW, Inches(0.8), Inches(2.0), Inches(11.45), Inches(3.2))
     growth.fill.solid()
-    growth.fill.fore_color.rgb = RGBColor(35, 142, 86)
+    growth.fill.fore_color.rgb = RGBColor(59, 130, 246)
     growth.fill.transparency = 0.22
     growth.line.fill.background()
 
@@ -509,9 +510,9 @@ def slide_technology(prs):
     for item in items:
         icon = s.shapes.add_shape(MSO_SHAPE.OVAL, Inches(0.9), Inches(y), Inches(0.36), Inches(0.36))
         icon.fill.solid()
-        icon.fill.fore_color.rgb = BLUE
+        icon.fill.fore_color.rgb = ACCENT
         icon.line.fill.background()
-        style_text(s.shapes.add_textbox(Inches(1.35), Inches(y - 0.02), Inches(5.2), Inches(0.42)), item, size=23, bold=True, color=BLUE_DARK, font=FONT_HEAD)
+        style_text(s.shapes.add_textbox(Inches(1.35), Inches(y - 0.02), Inches(5.2), Inches(0.42)), item, size=23, bold=True, color=TEXT, font=FONT_HEAD)
         y += 1.08
 
     add_photo(s, "technology", 7.0, 1.65, 5.65, 4.85)
@@ -543,7 +544,7 @@ def slide_impact(prs):
     chart.plots[0].has_data_labels = True
     chart.plots[0].data_labels.number_format = "0%"
     chart.plots[0].data_labels.position = 2
-    fills = [RGBColor(59, 126, 191), GREEN, RGBColor(170, 205, 235)]
+    fills = [ACCENT, RGBColor(96, 165, 250), RGBColor(191, 219, 254)]
     for i, p in enumerate(chart.series[0].points):
         p.format.fill.solid()
         p.format.fill.fore_color.rgb = fills[i]
@@ -576,7 +577,7 @@ def slide_funding(prs):
     pie.plots[0].has_data_labels = True
     pie.plots[0].data_labels.number_format = "0%"
     pie.plots[0].data_labels.position = 2
-    colors = [RGBColor(220, 145, 30), RGBColor(52, 133, 199), GREEN, RGBColor(166, 196, 231)]
+    colors = [PRIMARY, ACCENT, RGBColor(96, 165, 250), RGBColor(191, 219, 254)]
     for i, p in enumerate(pie.series[0].points):
         p.format.fill.solid()
         p.format.fill.fore_color.rgb = colors[i]
@@ -615,13 +616,13 @@ def slide_closing(prs):
     add_background(s, soft=True)
     add_header(s, "Join Us to", right_text="Transform African Education")
 
-    card(s, 0.65, 1.55, 6.2, 4.6, color=RGBColor(239, 248, 255))
+    card(s, 0.65, 1.55, 6.2, 4.6, color=CARD_BG)
     style_text(
         s.shapes.add_textbox(Inches(1.05), Inches(2.15), Inches(5.35), Inches(2.3)),
         "Partner with us\nTo empower teachers &\nstudents across Africa",
         size=30,
         bold=True,
-        color=BLUE_DARK,
+        color=TEXT,
         align=PP_ALIGN.CENTER,
         italic=True,
         font=FONT_HEAD,
@@ -631,7 +632,7 @@ def slide_closing(prs):
 
     bar = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, Inches(6.45), Inches(WIDTH), Inches(1.05))
     bar.fill.solid()
-    bar.fill.fore_color.rgb = BLUE
+    bar.fill.fore_color.rgb = PRIMARY
     bar.line.fill.background()
     style_text(
         s.shapes.add_textbox(Inches(0.7), Inches(6.72), Inches(12.0), Inches(0.5)),
@@ -666,11 +667,18 @@ def build():
     slide_team(prs)
     slide_closing(prs)
 
-    target = Path("Teacher_Copilot_Pitch_Deck.pptx")
-    try:
-        prs.save(str(target))
-    except PermissionError:
-        prs.save("Teacher_Copilot_Pitch_Deck_Enhanced.pptx")
+    candidates = [
+        "Teacher_Copilot_Pitch_Deck.pptx",
+        "Teacher_Copilot_Pitch_Deck_Enhanced.pptx",
+        f"Teacher_Copilot_Pitch_Deck_shadcn_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pptx",
+    ]
+    for name in candidates:
+        try:
+            prs.save(name)
+            return
+        except PermissionError:
+            continue
+    raise PermissionError("Could not save deck. Close open .pptx files and rerun.")
 
 
 if __name__ == "__main__":
