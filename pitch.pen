@@ -58,7 +58,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./assets/logo-transparent.svg",
+            "url": "assets/logo-transparent-cropped.png",
             "mode": "fit"
           },
           "width": 204,
@@ -153,7 +153,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./assets/logo-transparent.svg",
+            "url": "assets/logo-transparent-cropped.png",
             "mode": "fit"
           },
           "width": 204,
@@ -248,7 +248,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./assets/logo-transparent.svg",
+            "url": "assets/logo-transparent-cropped.png",
             "mode": "fit"
           },
           "width": 204,
@@ -343,7 +343,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./assets/logo-transparent.svg",
+            "url": "assets/logo-transparent-cropped.png",
             "mode": "fit"
           },
           "width": 204,
@@ -438,7 +438,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./assets/logo-transparent.svg",
+            "url": "assets/logo-transparent-cropped.png",
             "mode": "fit"
           },
           "width": 204,
@@ -533,7 +533,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./assets/logo-transparent.svg",
+            "url": "assets/logo-transparent-cropped.png",
             "mode": "fit"
           },
           "width": 204,
@@ -628,7 +628,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./assets/logo-transparent.svg",
+            "url": "assets/logo-transparent-cropped.png",
             "mode": "fit"
           },
           "width": 204,
@@ -723,7 +723,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./assets/logo-transparent.svg",
+            "url": "assets/logo-transparent-cropped.png",
             "mode": "fit"
           },
           "width": 204,
@@ -818,7 +818,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./assets/logo-transparent.svg",
+            "url": "assets/logo-transparent-cropped.png",
             "mode": "fit"
           },
           "width": 204,
@@ -913,7 +913,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./assets/logo-transparent.svg",
+            "url": "assets/logo-transparent-cropped.png",
             "mode": "fit"
           },
           "width": 204,
@@ -1008,7 +1008,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./assets/logo-transparent.svg",
+            "url": "assets/logo-transparent-cropped.png",
             "mode": "fit"
           },
           "width": 204,
