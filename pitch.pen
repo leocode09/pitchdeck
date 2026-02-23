@@ -150,202 +150,6 @@
     },
     {
       "type": "frame",
-      "id": "ANhJ9",
-      "x": 4260,
-      "y": 0,
-      "name": "04 Product",
-      "width": 1366,
-      "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
-      "layout": "vertical",
-      "gap": 24,
-      "padding": [
-        52,
-        64
-      ],
-      "children": [
-        {
-          "type": "text",
-          "id": "MLSs0",
-          "name": "s4a",
-          "fill": "#D4644E",
-          "content": "PRODUCT",
-          "fontFamily": "DM Sans",
-          "fontSize": 16,
-          "fontWeight": "semibold"
-        },
-        {
-          "type": "text",
-          "id": "a7HQ7",
-          "name": "s4b",
-          "fill": "#2D2522",
-          "content": "Built for completion, not collection.",
-          "fontFamily": "Fraunces",
-          "fontSize": 52,
-          "fontWeight": "semibold"
-        },
-        {
-          "type": "text",
-          "id": "XMaIb",
-          "name": "s4c",
-          "fill": "#6B5E5E",
-          "content": "- Smart recurring tasks and deadline prediction\n- Completion heatmaps and streak mechanics\n- Calendar + Slack integrations\n- Natural language quick add with AI cleanup",
-          "fontFamily": "DM Sans",
-          "fontSize": 28,
-          "fontWeight": "normal"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "cWj04",
-      "x": 5680,
-      "y": 0,
-      "name": "05 Market",
-      "width": 1366,
-      "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
-      "layout": "vertical",
-      "gap": 24,
-      "padding": [
-        52,
-        64
-      ],
-      "children": [
-        {
-          "type": "text",
-          "id": "Ox9uI",
-          "name": "s5a",
-          "fill": "#D4644E",
-          "content": "MARKET",
-          "fontFamily": "DM Sans",
-          "fontSize": 16,
-          "fontWeight": "semibold"
-        },
-        {
-          "type": "text",
-          "id": "I7w3x",
-          "name": "s5b",
-          "fill": "#2D2522",
-          "content": "A large market ready\nfor a completion-first product.",
-          "fontFamily": "Fraunces",
-          "fontSize": 52,
-          "fontWeight": "semibold"
-        },
-        {
-          "type": "text",
-          "id": "K6QXK",
-          "name": "s5c",
-          "fill": "#6B5E5E",
-          "content": "- Productivity software is a multi-billion-dollar category\n- Initial wedge: students, freelancers, solo builders\n- Expansion: from individuals to small team subscriptions\n- Long-term potential: 250k paid users",
-          "fontFamily": "DM Sans",
-          "fontSize": 28,
-          "fontWeight": "normal"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "ITMIK",
-      "x": 7100,
-      "y": 0,
-      "name": "06 Business Model",
-      "width": 1366,
-      "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
-      "layout": "vertical",
-      "gap": 24,
-      "padding": [
-        52,
-        64
-      ],
-      "children": [
-        {
-          "type": "text",
-          "id": "nX0sC",
-          "name": "s6a",
-          "fill": "#D4644E",
-          "content": "BUSINESS MODEL",
-          "fontFamily": "DM Sans",
-          "fontSize": 16,
-          "fontWeight": "semibold"
-        },
-        {
-          "type": "text",
-          "id": "1BvuX",
-          "name": "s6b",
-          "fill": "#2D2522",
-          "content": "Freemium economics with\nstrong subscription expansion.",
-          "fontFamily": "Fraunces",
-          "fontSize": 52,
-          "fontWeight": "semibold"
-        },
-        {
-          "type": "text",
-          "id": "1RJak",
-          "name": "s6c",
-          "fill": "#6B5E5E",
-          "content": "- Free plan drives top-of-funnel\n- Pro: $8/mo or $72/yr\n- Team: $12 per user/mo\n- Target gross margin above 85%",
-          "fontFamily": "DM Sans",
-          "fontSize": 28,
-          "fontWeight": "normal"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "02YnY",
-      "x": 8520,
-      "y": 0,
-      "name": "07 Traction",
-      "width": 1366,
-      "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
-      "layout": "vertical",
-      "gap": 24,
-      "padding": [
-        52,
-        64
-      ],
-      "children": [
-        {
-          "type": "text",
-          "id": "TgeLZ",
-          "name": "s7a",
-          "fill": "#D4644E",
-          "content": "TRACTION",
-          "fontFamily": "DM Sans",
-          "fontSize": 16,
-          "fontWeight": "semibold"
-        },
-        {
-          "type": "text",
-          "id": "kTKXw",
-          "name": "s7b",
-          "fill": "#2D2522",
-          "content": "Early numbers show\nretention and revenue momentum.",
-          "fontFamily": "Fraunces",
-          "fontSize": 52,
-          "fontWeight": "semibold"
-        },
-        {
-          "type": "text",
-          "id": "50srE",
-          "name": "s7c",
-          "fill": "#6B5E5E",
-          "content": "- 12,400 MAU growing 11% MoM\n- 1,180 paid subscribers\n- MRR: $8,000 (ARR: ~$96,000)\n- D30 retention: 41% paid users",
-          "fontFamily": "DM Sans",
-          "fontSize": 28,
-          "fontWeight": "normal"
-        }
-      ]
-    },
-    {
-      "type": "frame",
       "id": "4g1Z6",
       "x": 4261,
       "y": 0,
@@ -534,6 +338,202 @@
           "name": "s7c",
           "fill": "#6B5E5E",
           "content": "- Product Hunt launch + creator-led distribution\n- SEO for high-intent task management keywords\n- Referral loop: invite a teammate, unlock Pro trial\n- B2B wedge through agencies and startup teams",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "P3x3N",
+      "x": 9941,
+      "y": 0,
+      "name": "08 Traction",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "xIeww",
+          "name": "s8a",
+          "fill": "#D4644E",
+          "content": "EARLY TRACTION",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "ToIgE",
+          "name": "s8b",
+          "fill": "#2D2522",
+          "content": "Initial usage signals\nshow strong product pull.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "zPxcz",
+          "name": "s8c",
+          "fill": "#6B5E5E",
+          "content": "- 1,200 waitlist signups in the first 6 weeks\n- 180 private beta users with 41% WAU\n- Active users complete 3+ tasks/day on average\n- 22 paying users currently generating $176 MRR",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "iRslI",
+      "x": 11361,
+      "y": 0,
+      "name": "09 Competition",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "uFxLI",
+          "name": "s9a",
+          "fill": "#D4644E",
+          "content": "COMPETITIVE EDGE",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "x6jSw",
+          "name": "s9b",
+          "fill": "#2D2522",
+          "content": "We optimize for completed work,\nnot just stored tasks.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "dBHyt",
+          "name": "s9c",
+          "fill": "#6B5E5E",
+          "content": "- Alternatives: Todoist, TickTick, Notion Tasks, Apple Reminders\n- Differentiator: AI-generated daily action plan\n- Faster time-to-value: first task completed in under 2 minutes\n- Built around completion analytics and habit retention",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "2wa2M",
+      "x": 12781,
+      "y": 0,
+      "name": "10 Milestones",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "0wzeI",
+          "name": "s10a",
+          "fill": "#D4644E",
+          "content": "MILESTONES + USE OF FUNDS",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "M1R3r",
+          "name": "s10b",
+          "fill": "#2D2522",
+          "content": "$200k extends runway\nand de-risks the next 18 months.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "ogifS",
+          "name": "s10c",
+          "fill": "#6B5E5E",
+          "content": "- Q2 2026: public launch and onboarding v2\n- Q3 2026: 2,000 MAU and 500 paid users\n- Q4 2026: $10k MRR and integrations marketplace\n- Use of funds: 45% product, 35% growth, 15% infra/AI, 5% ops",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "7UykF",
+      "x": 14201,
+      "y": 0,
+      "name": "11 Ask",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "A4iH0",
+          "name": "s11a",
+          "fill": "#D4644E",
+          "content": "THE ASK",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "LAnOW",
+          "name": "s11b",
+          "fill": "#2D2522",
+          "content": "Raising $200,000 on a SAFE\nto accelerate product and growth.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "RfGvc",
+          "name": "s11c",
+          "fill": "#6B5E5E",
+          "content": "- Round size: $200,000 | minimum check: $10,000\n- Target close: within 8 weeks\n- Looking for angels with SaaS and productivity expertise\n- Contact: founder@flowlist.app",
           "fontFamily": "DM Sans",
           "fontSize": 28,
           "fontWeight": "normal"
