@@ -1,4 +1,544 @@
 {
   "version": "2.8",
-  "children": []
+  "children": [
+    {
+      "type": "frame",
+      "id": "N65R7",
+      "x": 0,
+      "y": 0,
+      "name": "01 Cover",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "sixq4",
+          "name": "s1a",
+          "fill": "#D4644E",
+          "content": "FLOWLIST · PRE-SEED",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "uatfv",
+          "name": "s1b",
+          "fill": "#2D2522",
+          "content": "Raising $200,000 for FlowList,\nthe daily command center for productivity.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "ToMul",
+          "name": "s1c",
+          "fill": "#6B5E5E",
+          "content": "- Product: AI-assisted todo app focused on daily completion\n- Raise: $200,000 SAFE\n- Use of funds: product, growth, and integrations\n- Goal: reach repeatable acquisition and durable subscription revenue",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WnF0C",
+      "x": 1420,
+      "y": 0,
+      "name": "02 Problem",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "FzT4o",
+          "name": "s2a",
+          "fill": "#D4644E",
+          "content": "THE PROBLEM",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "jM2JK",
+          "name": "s2b",
+          "fill": "#2D2522",
+          "content": "People capture tasks,\nbut still miss what matters.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "eJSf2",
+          "name": "s2c",
+          "fill": "#6B5E5E",
+          "content": "- Tasks are spread across too many disconnected tools\n- Most todo apps store tasks but do not drive execution\n- Planning overhead causes abandonment\n- Context switching and weak prioritization hurt outcomes",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WZRdD",
+      "x": 2841,
+      "y": 0,
+      "name": "03 Solution",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "qAy8u",
+          "name": "s3a",
+          "fill": "#D4644E",
+          "content": "THE SOLUTION",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "bNgI4",
+          "name": "s3b",
+          "fill": "#2D2522",
+          "content": "FlowList turns raw task lists\ninto an executable daily plan.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "2F8zO",
+          "name": "s3c",
+          "fill": "#6B5E5E",
+          "content": "- Priority scoring by urgency and impact\n- AI-generated Today Plan with top 3 outcomes\n- Time-block suggestions in seconds\n- Focus mode to improve completion rate",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ANhJ9",
+      "x": 4260,
+      "y": 0,
+      "name": "04 Product",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "MLSs0",
+          "name": "s4a",
+          "fill": "#D4644E",
+          "content": "PRODUCT",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "a7HQ7",
+          "name": "s4b",
+          "fill": "#2D2522",
+          "content": "Built for completion, not collection.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "XMaIb",
+          "name": "s4c",
+          "fill": "#6B5E5E",
+          "content": "- Smart recurring tasks and deadline prediction\n- Completion heatmaps and streak mechanics\n- Calendar + Slack integrations\n- Natural language quick add with AI cleanup",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "cWj04",
+      "x": 5680,
+      "y": 0,
+      "name": "05 Market",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "Ox9uI",
+          "name": "s5a",
+          "fill": "#D4644E",
+          "content": "MARKET",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "I7w3x",
+          "name": "s5b",
+          "fill": "#2D2522",
+          "content": "A large market ready\nfor a completion-first product.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "K6QXK",
+          "name": "s5c",
+          "fill": "#6B5E5E",
+          "content": "- Productivity software is a multi-billion-dollar category\n- Initial wedge: students, freelancers, solo builders\n- Expansion: from individuals to small team subscriptions\n- Long-term potential: 250k paid users",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ITMIK",
+      "x": 7100,
+      "y": 0,
+      "name": "06 Business Model",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "nX0sC",
+          "name": "s6a",
+          "fill": "#D4644E",
+          "content": "BUSINESS MODEL",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "1BvuX",
+          "name": "s6b",
+          "fill": "#2D2522",
+          "content": "Freemium economics with\nstrong subscription expansion.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "1RJak",
+          "name": "s6c",
+          "fill": "#6B5E5E",
+          "content": "- Free plan drives top-of-funnel\n- Pro: $8/mo or $72/yr\n- Team: $12 per user/mo\n- Target gross margin above 85%",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "02YnY",
+      "x": 8520,
+      "y": 0,
+      "name": "07 Traction",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "TgeLZ",
+          "name": "s7a",
+          "fill": "#D4644E",
+          "content": "TRACTION",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "kTKXw",
+          "name": "s7b",
+          "fill": "#2D2522",
+          "content": "Early numbers show\nretention and revenue momentum.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "50srE",
+          "name": "s7c",
+          "fill": "#6B5E5E",
+          "content": "- 12,400 MAU growing 11% MoM\n- 1,180 paid subscribers\n- MRR: $8,000 (ARR: ~$96,000)\n- D30 retention: 41% paid users",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "4g1Z6",
+      "x": 4261,
+      "y": 0,
+      "name": "04 Product",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "3HKod",
+          "name": "s4a",
+          "fill": "#D4644E",
+          "content": "PRODUCT EXPERIENCE",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "g8K95",
+          "name": "s4b",
+          "fill": "#2D2522",
+          "content": "One screen to capture, prioritize,\nand finish your day.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "TqsnD",
+          "name": "s4c",
+          "fill": "#6B5E5E",
+          "content": "- Quick capture with natural language input\n- AI sorts tasks into Today, This Week, and Later\n- Calendar sync with smart time-block suggestions\n- Focus mode and streaks increase completion behavior",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "KJT6D",
+      "x": 5681,
+      "y": 0,
+      "name": "05 Market",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "KOJKK",
+          "name": "s5a",
+          "fill": "#D4644E",
+          "content": "MARKET OPPORTUNITY",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "o1sBg",
+          "name": "s5b",
+          "fill": "#2D2522",
+          "content": "A large, growing market\nfor everyday productivity.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "QrXZJ",
+          "name": "s5c",
+          "fill": "#6B5E5E",
+          "content": "- Global productivity software market exceeds $50B\n- Initial focus: freelancers and small teams in US/EU\n- Beachhead segment represents ~18M potential users\n- Capturing 2% at $8/month implies $34M+ ARR potential",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "v6TOP",
+      "x": 7101,
+      "y": 0,
+      "name": "06 Business Model",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "gqYPk",
+          "name": "s6a",
+          "fill": "#D4644E",
+          "content": "BUSINESS MODEL",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "ATD0M",
+          "name": "s6b",
+          "fill": "#2D2522",
+          "content": "Subscription-led revenue\nwith efficient unit economics.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "A9xKT",
+          "name": "s6c",
+          "fill": "#6B5E5E",
+          "content": "- Free tier drives acquisition and activation\n- Pro: $8/user/month for AI planning and integrations\n- Team: $12/user/month for shared workflows\n- Software-only delivery supports 85%+ gross margin",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WWfUj",
+      "x": 8521,
+      "y": 0,
+      "name": "07 Go-To-Market",
+      "width": 1366,
+      "height": 768,
+      "fill": "#FFFBF7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        52,
+        64
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "WCHWy",
+          "name": "s7a",
+          "fill": "#D4644E",
+          "content": "GO-TO-MARKET",
+          "fontFamily": "DM Sans",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "FnaOv",
+          "name": "s7b",
+          "fill": "#2D2522",
+          "content": "Acquire users where intent\nand habit formation are strongest.",
+          "fontFamily": "Fraunces",
+          "fontSize": 52,
+          "fontWeight": "semibold"
+        },
+        {
+          "type": "text",
+          "id": "Y7q9g",
+          "name": "s7c",
+          "fill": "#6B5E5E",
+          "content": "- Product Hunt launch + creator-led distribution\n- SEO for high-intent task management keywords\n- Referral loop: invite a teammate, unlock Pro trial\n- B2B wedge through agencies and startup teams",
+          "fontFamily": "DM Sans",
+          "fontSize": 28,
+          "fontWeight": "normal"
+        }
+      ]
+    }
+  ]
 }
