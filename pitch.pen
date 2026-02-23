@@ -9,15 +9,61 @@
       "name": "01 Cover",
       "width": 1366,
       "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 220,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFF6EE",
+            "position": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "position": 1
+          }
+        ]
+      },
+      "cornerRadius": 28,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#EFDCCE"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1E1E1E1A",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 26
+      },
       "layout": "vertical",
-      "gap": 24,
+      "gap": 22,
       "padding": [
-        52,
-        64
+        56,
+        72
       ],
       "children": [
+        {
+          "type": "rectangle",
+          "id": "bx2xi",
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./assets/logo-transparent.svg",
+            "mode": "fit"
+          },
+          "width": 204,
+          "height": 58
+        },
         {
           "type": "text",
           "id": "sixq4",
@@ -25,7 +71,7 @@
           "fill": "#D4644E",
           "content": "FLOWLIST · PRE-SEED",
           "fontFamily": "DM Sans",
-          "fontSize": 16,
+          "fontSize": 14,
           "fontWeight": "semibold"
         },
         {
@@ -35,7 +81,7 @@
           "fill": "#2D2522",
           "content": "Raising $200,000 for FlowList,\nthe daily command center for productivity.",
           "fontFamily": "Fraunces",
-          "fontSize": 52,
+          "fontSize": 48,
           "fontWeight": "semibold"
         },
         {
@@ -45,7 +91,7 @@
           "fill": "#6B5E5E",
           "content": "- Product: AI-assisted todo app focused on daily completion\n- Raise: $200,000 SAFE\n- Use of funds: product, growth, and integrations\n- Goal: reach repeatable acquisition and durable subscription revenue",
           "fontFamily": "DM Sans",
-          "fontSize": 28,
+          "fontSize": 24,
           "fontWeight": "normal"
         }
       ]
@@ -58,15 +104,61 @@
       "name": "02 Problem",
       "width": 1366,
       "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 220,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFF6EE",
+            "position": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "position": 1
+          }
+        ]
+      },
+      "cornerRadius": 28,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#EFDCCE"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1E1E1E1A",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 26
+      },
       "layout": "vertical",
-      "gap": 24,
+      "gap": 22,
       "padding": [
-        52,
-        64
+        56,
+        72
       ],
       "children": [
+        {
+          "type": "rectangle",
+          "id": "7ncPf",
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./assets/logo-transparent.svg",
+            "mode": "fit"
+          },
+          "width": 204,
+          "height": 58
+        },
         {
           "type": "text",
           "id": "FzT4o",
@@ -74,7 +166,7 @@
           "fill": "#D4644E",
           "content": "THE PROBLEM",
           "fontFamily": "DM Sans",
-          "fontSize": 16,
+          "fontSize": 14,
           "fontWeight": "semibold"
         },
         {
@@ -84,7 +176,7 @@
           "fill": "#2D2522",
           "content": "People capture tasks,\nbut still miss what matters.",
           "fontFamily": "Fraunces",
-          "fontSize": 52,
+          "fontSize": 48,
           "fontWeight": "semibold"
         },
         {
@@ -94,7 +186,7 @@
           "fill": "#6B5E5E",
           "content": "- Tasks are spread across too many disconnected tools\n- Most todo apps store tasks but do not drive execution\n- Planning overhead causes abandonment\n- Context switching and weak prioritization hurt outcomes",
           "fontFamily": "DM Sans",
-          "fontSize": 28,
+          "fontSize": 24,
           "fontWeight": "normal"
         }
       ]
@@ -107,15 +199,61 @@
       "name": "03 Solution",
       "width": 1366,
       "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 220,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFF6EE",
+            "position": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "position": 1
+          }
+        ]
+      },
+      "cornerRadius": 28,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#EFDCCE"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1E1E1E1A",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 26
+      },
       "layout": "vertical",
-      "gap": 24,
+      "gap": 22,
       "padding": [
-        52,
-        64
+        56,
+        72
       ],
       "children": [
+        {
+          "type": "rectangle",
+          "id": "Rnbft",
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./assets/logo-transparent.svg",
+            "mode": "fit"
+          },
+          "width": 204,
+          "height": 58
+        },
         {
           "type": "text",
           "id": "qAy8u",
@@ -123,7 +261,7 @@
           "fill": "#D4644E",
           "content": "THE SOLUTION",
           "fontFamily": "DM Sans",
-          "fontSize": 16,
+          "fontSize": 14,
           "fontWeight": "semibold"
         },
         {
@@ -133,7 +271,7 @@
           "fill": "#2D2522",
           "content": "FlowList turns raw task lists\ninto an executable daily plan.",
           "fontFamily": "Fraunces",
-          "fontSize": 52,
+          "fontSize": 48,
           "fontWeight": "semibold"
         },
         {
@@ -143,7 +281,7 @@
           "fill": "#6B5E5E",
           "content": "- Priority scoring by urgency and impact\n- AI-generated Today Plan with top 3 outcomes\n- Time-block suggestions in seconds\n- Focus mode to improve completion rate",
           "fontFamily": "DM Sans",
-          "fontSize": 28,
+          "fontSize": 24,
           "fontWeight": "normal"
         }
       ]
@@ -156,15 +294,61 @@
       "name": "04 Product",
       "width": 1366,
       "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 220,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFF6EE",
+            "position": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "position": 1
+          }
+        ]
+      },
+      "cornerRadius": 28,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#EFDCCE"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1E1E1E1A",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 26
+      },
       "layout": "vertical",
-      "gap": 24,
+      "gap": 22,
       "padding": [
-        52,
-        64
+        56,
+        72
       ],
       "children": [
+        {
+          "type": "rectangle",
+          "id": "fmd3w",
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./assets/logo-transparent.svg",
+            "mode": "fit"
+          },
+          "width": 204,
+          "height": 58
+        },
         {
           "type": "text",
           "id": "3HKod",
@@ -172,7 +356,7 @@
           "fill": "#D4644E",
           "content": "PRODUCT EXPERIENCE",
           "fontFamily": "DM Sans",
-          "fontSize": 16,
+          "fontSize": 14,
           "fontWeight": "semibold"
         },
         {
@@ -182,7 +366,7 @@
           "fill": "#2D2522",
           "content": "One screen to capture, prioritize,\nand finish your day.",
           "fontFamily": "Fraunces",
-          "fontSize": 52,
+          "fontSize": 48,
           "fontWeight": "semibold"
         },
         {
@@ -192,7 +376,7 @@
           "fill": "#6B5E5E",
           "content": "- Quick capture with natural language input\n- AI sorts tasks into Today, This Week, and Later\n- Calendar sync with smart time-block suggestions\n- Focus mode and streaks increase completion behavior",
           "fontFamily": "DM Sans",
-          "fontSize": 28,
+          "fontSize": 24,
           "fontWeight": "normal"
         }
       ]
@@ -205,15 +389,61 @@
       "name": "05 Market",
       "width": 1366,
       "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 220,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFF6EE",
+            "position": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "position": 1
+          }
+        ]
+      },
+      "cornerRadius": 28,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#EFDCCE"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1E1E1E1A",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 26
+      },
       "layout": "vertical",
-      "gap": 24,
+      "gap": 22,
       "padding": [
-        52,
-        64
+        56,
+        72
       ],
       "children": [
+        {
+          "type": "rectangle",
+          "id": "qo1OY",
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./assets/logo-transparent.svg",
+            "mode": "fit"
+          },
+          "width": 204,
+          "height": 58
+        },
         {
           "type": "text",
           "id": "KOJKK",
@@ -221,7 +451,7 @@
           "fill": "#D4644E",
           "content": "MARKET OPPORTUNITY",
           "fontFamily": "DM Sans",
-          "fontSize": 16,
+          "fontSize": 14,
           "fontWeight": "semibold"
         },
         {
@@ -231,7 +461,7 @@
           "fill": "#2D2522",
           "content": "A large, growing market\nfor everyday productivity.",
           "fontFamily": "Fraunces",
-          "fontSize": 52,
+          "fontSize": 48,
           "fontWeight": "semibold"
         },
         {
@@ -241,7 +471,7 @@
           "fill": "#6B5E5E",
           "content": "- Global productivity software market exceeds $50B\n- Initial focus: freelancers and small teams in US/EU\n- Beachhead segment represents ~18M potential users\n- Capturing 2% at $8/month implies $34M+ ARR potential",
           "fontFamily": "DM Sans",
-          "fontSize": 28,
+          "fontSize": 24,
           "fontWeight": "normal"
         }
       ]
@@ -254,15 +484,61 @@
       "name": "06 Business Model",
       "width": 1366,
       "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 220,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFF6EE",
+            "position": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "position": 1
+          }
+        ]
+      },
+      "cornerRadius": 28,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#EFDCCE"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1E1E1E1A",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 26
+      },
       "layout": "vertical",
-      "gap": 24,
+      "gap": 22,
       "padding": [
-        52,
-        64
+        56,
+        72
       ],
       "children": [
+        {
+          "type": "rectangle",
+          "id": "tG2qo",
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./assets/logo-transparent.svg",
+            "mode": "fit"
+          },
+          "width": 204,
+          "height": 58
+        },
         {
           "type": "text",
           "id": "gqYPk",
@@ -270,7 +546,7 @@
           "fill": "#D4644E",
           "content": "BUSINESS MODEL",
           "fontFamily": "DM Sans",
-          "fontSize": 16,
+          "fontSize": 14,
           "fontWeight": "semibold"
         },
         {
@@ -280,7 +556,7 @@
           "fill": "#2D2522",
           "content": "Subscription-led revenue\nwith efficient unit economics.",
           "fontFamily": "Fraunces",
-          "fontSize": 52,
+          "fontSize": 48,
           "fontWeight": "semibold"
         },
         {
@@ -290,7 +566,7 @@
           "fill": "#6B5E5E",
           "content": "- Free tier drives acquisition and activation\n- Pro: $8/user/month for AI planning and integrations\n- Team: $12/user/month for shared workflows\n- Software-only delivery supports 85%+ gross margin",
           "fontFamily": "DM Sans",
-          "fontSize": 28,
+          "fontSize": 24,
           "fontWeight": "normal"
         }
       ]
@@ -303,15 +579,61 @@
       "name": "07 Go-To-Market",
       "width": 1366,
       "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 220,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFF6EE",
+            "position": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "position": 1
+          }
+        ]
+      },
+      "cornerRadius": 28,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#EFDCCE"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1E1E1E1A",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 26
+      },
       "layout": "vertical",
-      "gap": 24,
+      "gap": 22,
       "padding": [
-        52,
-        64
+        56,
+        72
       ],
       "children": [
+        {
+          "type": "rectangle",
+          "id": "rz6uA",
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./assets/logo-transparent.svg",
+            "mode": "fit"
+          },
+          "width": 204,
+          "height": 58
+        },
         {
           "type": "text",
           "id": "WCHWy",
@@ -319,7 +641,7 @@
           "fill": "#D4644E",
           "content": "GO-TO-MARKET",
           "fontFamily": "DM Sans",
-          "fontSize": 16,
+          "fontSize": 14,
           "fontWeight": "semibold"
         },
         {
@@ -329,7 +651,7 @@
           "fill": "#2D2522",
           "content": "Acquire users where intent\nand habit formation are strongest.",
           "fontFamily": "Fraunces",
-          "fontSize": 52,
+          "fontSize": 48,
           "fontWeight": "semibold"
         },
         {
@@ -339,7 +661,7 @@
           "fill": "#6B5E5E",
           "content": "- Product Hunt launch + creator-led distribution\n- SEO for high-intent task management keywords\n- Referral loop: invite a teammate, unlock Pro trial\n- B2B wedge through agencies and startup teams",
           "fontFamily": "DM Sans",
-          "fontSize": 28,
+          "fontSize": 24,
           "fontWeight": "normal"
         }
       ]
@@ -352,15 +674,61 @@
       "name": "08 Traction",
       "width": 1366,
       "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 220,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFF6EE",
+            "position": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "position": 1
+          }
+        ]
+      },
+      "cornerRadius": 28,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#EFDCCE"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1E1E1E1A",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 26
+      },
       "layout": "vertical",
-      "gap": 24,
+      "gap": 22,
       "padding": [
-        52,
-        64
+        56,
+        72
       ],
       "children": [
+        {
+          "type": "rectangle",
+          "id": "yQ2RX",
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./assets/logo-transparent.svg",
+            "mode": "fit"
+          },
+          "width": 204,
+          "height": 58
+        },
         {
           "type": "text",
           "id": "xIeww",
@@ -368,7 +736,7 @@
           "fill": "#D4644E",
           "content": "EARLY TRACTION",
           "fontFamily": "DM Sans",
-          "fontSize": 16,
+          "fontSize": 14,
           "fontWeight": "semibold"
         },
         {
@@ -378,7 +746,7 @@
           "fill": "#2D2522",
           "content": "Initial usage signals\nshow strong product pull.",
           "fontFamily": "Fraunces",
-          "fontSize": 52,
+          "fontSize": 48,
           "fontWeight": "semibold"
         },
         {
@@ -388,7 +756,7 @@
           "fill": "#6B5E5E",
           "content": "- 1,200 waitlist signups in the first 6 weeks\n- 180 private beta users with 41% WAU\n- Active users complete 3+ tasks/day on average\n- 22 paying users currently generating $176 MRR",
           "fontFamily": "DM Sans",
-          "fontSize": 28,
+          "fontSize": 24,
           "fontWeight": "normal"
         }
       ]
@@ -401,15 +769,61 @@
       "name": "09 Competition",
       "width": 1366,
       "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 220,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFF6EE",
+            "position": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "position": 1
+          }
+        ]
+      },
+      "cornerRadius": 28,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#EFDCCE"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1E1E1E1A",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 26
+      },
       "layout": "vertical",
-      "gap": 24,
+      "gap": 22,
       "padding": [
-        52,
-        64
+        56,
+        72
       ],
       "children": [
+        {
+          "type": "rectangle",
+          "id": "y4Pae",
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./assets/logo-transparent.svg",
+            "mode": "fit"
+          },
+          "width": 204,
+          "height": 58
+        },
         {
           "type": "text",
           "id": "uFxLI",
@@ -417,7 +831,7 @@
           "fill": "#D4644E",
           "content": "COMPETITIVE EDGE",
           "fontFamily": "DM Sans",
-          "fontSize": 16,
+          "fontSize": 14,
           "fontWeight": "semibold"
         },
         {
@@ -427,7 +841,7 @@
           "fill": "#2D2522",
           "content": "We optimize for completed work,\nnot just stored tasks.",
           "fontFamily": "Fraunces",
-          "fontSize": 52,
+          "fontSize": 48,
           "fontWeight": "semibold"
         },
         {
@@ -437,7 +851,7 @@
           "fill": "#6B5E5E",
           "content": "- Alternatives: Todoist, TickTick, Notion Tasks, Apple Reminders\n- Differentiator: AI-generated daily action plan\n- Faster time-to-value: first task completed in under 2 minutes\n- Built around completion analytics and habit retention",
           "fontFamily": "DM Sans",
-          "fontSize": 28,
+          "fontSize": 24,
           "fontWeight": "normal"
         }
       ]
@@ -450,15 +864,61 @@
       "name": "10 Milestones",
       "width": 1366,
       "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 220,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFF6EE",
+            "position": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "position": 1
+          }
+        ]
+      },
+      "cornerRadius": 28,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#EFDCCE"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1E1E1E1A",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 26
+      },
       "layout": "vertical",
-      "gap": 24,
+      "gap": 22,
       "padding": [
-        52,
-        64
+        56,
+        72
       ],
       "children": [
+        {
+          "type": "rectangle",
+          "id": "6O4Y8",
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./assets/logo-transparent.svg",
+            "mode": "fit"
+          },
+          "width": 204,
+          "height": 58
+        },
         {
           "type": "text",
           "id": "0wzeI",
@@ -466,7 +926,7 @@
           "fill": "#D4644E",
           "content": "MILESTONES + USE OF FUNDS",
           "fontFamily": "DM Sans",
-          "fontSize": 16,
+          "fontSize": 14,
           "fontWeight": "semibold"
         },
         {
@@ -476,7 +936,7 @@
           "fill": "#2D2522",
           "content": "$200k extends runway\nand de-risks the next 18 months.",
           "fontFamily": "Fraunces",
-          "fontSize": 52,
+          "fontSize": 48,
           "fontWeight": "semibold"
         },
         {
@@ -486,7 +946,7 @@
           "fill": "#6B5E5E",
           "content": "- Q2 2026: public launch and onboarding v2\n- Q3 2026: 2,000 MAU and 500 paid users\n- Q4 2026: $10k MRR and integrations marketplace\n- Use of funds: 45% product, 35% growth, 15% infra/AI, 5% ops",
           "fontFamily": "DM Sans",
-          "fontSize": 28,
+          "fontSize": 24,
           "fontWeight": "normal"
         }
       ]
@@ -499,15 +959,61 @@
       "name": "11 Ask",
       "width": 1366,
       "height": 768,
-      "fill": "#FFFBF7",
-      "cornerRadius": 24,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 220,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#FFF6EE",
+            "position": 0
+          },
+          {
+            "color": "#FFFFFF",
+            "position": 1
+          }
+        ]
+      },
+      "cornerRadius": 28,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#EFDCCE"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1E1E1E1A",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 26
+      },
       "layout": "vertical",
-      "gap": 24,
+      "gap": 22,
       "padding": [
-        52,
-        64
+        56,
+        72
       ],
       "children": [
+        {
+          "type": "rectangle",
+          "id": "XtAAe",
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./assets/logo-transparent.svg",
+            "mode": "fit"
+          },
+          "width": 204,
+          "height": 58
+        },
         {
           "type": "text",
           "id": "A4iH0",
@@ -515,7 +1021,7 @@
           "fill": "#D4644E",
           "content": "THE ASK",
           "fontFamily": "DM Sans",
-          "fontSize": 16,
+          "fontSize": 14,
           "fontWeight": "semibold"
         },
         {
@@ -525,7 +1031,7 @@
           "fill": "#2D2522",
           "content": "Raising $200,000 on a SAFE\nto accelerate product and growth.",
           "fontFamily": "Fraunces",
-          "fontSize": 52,
+          "fontSize": 48,
           "fontWeight": "semibold"
         },
         {
@@ -535,7 +1041,7 @@
           "fill": "#6B5E5E",
           "content": "- Round size: $200,000 | minimum check: $10,000\n- Target close: within 8 weeks\n- Looking for angels with SaaS and productivity expertise\n- Contact: founder@flowlist.app",
           "fontFamily": "DM Sans",
-          "fontSize": 28,
+          "fontSize": 24,
           "fontWeight": "normal"
         }
       ]
